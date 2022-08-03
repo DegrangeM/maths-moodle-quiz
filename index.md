@@ -8,11 +8,5 @@ Plusieurs sites proposent des exercices mathématiques interactifs, mais les ban
 # La liste des sites
 
 {% for s in site.sites %}
-  <h2>{{ s.nom }}</h2>
-  <a href="{{ s.lien }}"><button>Accéder</button></a> <a href="{{ s.aide }}"><button>Aide</button></a>
   <p>{{ s.content | markdownify }}</p>
-
-  {% for a in s.avantages %}
-    <p>{{ a }}</p>
-  {% endfor %}
 {% endfor %}
