@@ -10,5 +10,6 @@ Plusieurs sites proposent des exercices mathématiques interactifs, mais les ban
 {% for s in site.sites %}
   <h2 id="site-{{ s.slug }}">{{ s.nom }}</h2>
   <a href="{{ s.lien }}"><button>Accéder</button></a> <a href="{{ s.aide }}"><button>Aide</button></a>
+  <center><a href="./sites/images/{{s.slug}}.png"><img src="./sites/images/{{s.slug}}.png" style="max-height:300px;max-width:500px;" /></a></center>
   <p>{{ s.content | markdownify }}</p>
 {% endfor %}
