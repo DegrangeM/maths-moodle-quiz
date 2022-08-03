@@ -1,7 +1,7 @@
 theme: jekyll-theme-architect
 collections:
   sites:
-    output: true
+    output: false
 defaults:
   - scope:
       path: ""
