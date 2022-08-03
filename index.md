@@ -1,9 +1,10 @@
 ---
 ---
+
+Description du site ...
+
 {% for site in site.sites %}
-  <li>
-    <h2>{{ site.nom }}</h2>
-    <h3>{{ site.aide }}</h3>
-    <p>{{ site.content | markdownify }}</p>
-  </li>
+  <h1>{{ site.nom }}</h1>
+  <a href="{{ site.lien }}"><button>Accéder</button></a> <a href="{{ site.aide }}"><button>Aide</button></a>
+  <p>{{ site.content | markdownify }}</p>
 {% endfor %}
