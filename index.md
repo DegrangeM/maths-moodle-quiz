@@ -1,6 +1,6 @@
 ---
 ---
-{% for sites in site.sites %}
+{% for site in site.sites %}
   <li>
     <h2>{{ site.nom }}</h2>
     <h3>{{ site.aide }}</h3>
