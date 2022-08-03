@@ -43,7 +43,9 @@
           <ul>
           {% for s in site.sites %}
             <li>
-              <a href="{{ index.md | relative_url }}#site-{{ s.slug }}">{{ s.nom }}</a>
+              <a href="{{ /index.html | relative_url }}#site-{{ s.slug }}">{{ s.nom }}</a>
+              <a href="{{ /index | relative_url }}#site-{{ s.slug }}">{{ s.nom }}</a>
+              <a href="{{ /index.md | relative_url }}#site-{{ s.slug }}">{{ s.nom }}</a>
             </li>
           {% endfor %}
           </ul>
