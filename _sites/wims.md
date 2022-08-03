@@ -6,4 +6,4 @@ image: false
 wip: true
 ---
 
-TODO
+Wims est un exerciseur en ligne. Il sera peut être possible dans le futur d'inclure des exercices wims dans moodle.
