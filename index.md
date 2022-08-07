@@ -42,17 +42,17 @@ Plusieurs sites proposent des exercices mathématiques interactifs, mais les ban
                 },
                 {% for s in site.sites %}
                  {
-                  "id": "{{ s.nom }}",
-                  "labels": ["{{ s.nom }}"]
+                  "id": "{{ s.slug }}",
+                  "labels": ["{{ s.slug }}"]
                 },
                 {% endfor %}
               ],
               "relationships": [
                 {% for s in site.sites %}
                  {
-                  "id": "link-{{ s.nom }}",
+                  "id": "link-{{ s.slug }}",
                   "type": "DEVELOPES",
-                  "startNode": "{{ s.nom }}",
+                  "startNode": "{{ s.slug }}",
                   "endNode": "Moodle",
                 },
                 {% endfor %}
