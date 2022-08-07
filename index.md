@@ -34,25 +34,29 @@ Plusieurs sites proposent des exercices mathématiques interactifs, mais les ban
             "graph": {
               "nodes": [
                 {
-                  "id": "1",
-                  "labels": ["User"],
+                  "id": "Moodle",
+                  "labels": ["Moodle"]/*,
                   "properties": {
                     "userId": "eisman"
-                  }
+                  }*/
                 },
-                {
-                  "id": "8",
-                  "labels": ["Project"],
-                  "properties": {
-                    "name": "neo4jd3",
-                    "title": "neo4jd3.js",
-                    "description": "Neo4j graph visualization using D3.js.",
-                    "url": "https://eisman.github.io/neo4jd3"
-                  }
-                }
+                {% for s in site.sites %}
+                 {
+                  "id": "{{ s.nom }}",
+                  "labels": ["{{ s.nom }}"]
+                },
+                {% endfor %}
               ],
               "relationships": [
-                {
+                {% for s in site.sites %}
+                 {
+                  "id": "link-{{ s.nom }}",
+                  "type": "DEVELOPES",
+                  "startNode": "{{ s.nom }}",
+                  "endNode": "Moodle",
+                },
+                {% endfor %}
+                /*{
                   "id": "7",
                   "type": "DEVELOPES",
                   "startNode": "1",
@@ -60,7 +64,7 @@ Plusieurs sites proposent des exercices mathématiques interactifs, mais les ban
                   "properties": {
                     "from": 1470002400000
                   }
-                }
+                }*/
               ]
             }
           }
