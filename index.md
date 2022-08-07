@@ -45,22 +45,26 @@ Plusieurs sites proposent des exercices mathématiques interactifs, mais les ban
                   "properties": { }
                 },
                 {% for s in site.sites %}
-                 {
-                  "id": "{{ s.slug }}",
-                  "labels": ["{{ s.slug }}"],
-                  "properties": { }
-                },
+                  {% unless s.wip %}
+                  {
+                    "id": "{{ s.slug }}",
+                    "labels": ["{{ s.slug }}"],
+                    "properties": { }
+                  },
+                  {% endunless %}
                 {% endfor %}
               ],
               "relationships": [
                 {% for s in site.sites %}
-                 {
-                  "id": "link-{{ s.slug }}",
-                  "type": "DEVELOPES",
-                  "startNode": "{{ s.slug }}",
-                  "endNode": "Moodle",
-                  "properties": { }
-                },
+                  {% unless s.wip %}
+                    {
+                      "id": "link-{{ s.slug }}",
+                      "type": "DEVELOPES",
+                      "startNode": "{{ s.slug }}",
+                      "endNode": "Moodle",
+                      "properties": { }
+                    },
+                  {% endunless %}
                 {% endfor %}
                 /*{
                   "id": "7",
