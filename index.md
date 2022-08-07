@@ -59,7 +59,7 @@ Plusieurs sites proposent des exercices mathématiques interactifs, mais les ban
                   {% unless s.wip %}
                     {
                       "id": "link-{{ s.slug }}",
-                      "type": "DEVELOPES",
+                      // "type": "DEVELOPES",
                       "startNode": "{{ s.slug }}",
                       "endNode": "Moodle",
                       "properties": { }
