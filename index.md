@@ -35,15 +35,14 @@ Plusieurs sites proposent des exercices mathématiques interactifs, mais les ban
               "nodes": [
                 {
                   "id": "Moodle",
-                  "labels": ["Moodle"]/*,
-                  "properties": {
-                    "userId": "eisman"
-                  }*/
+                  "labels": ["Moodle"],
+                  "properties": { }
                 },
                 {% for s in site.sites %}
                  {
                   "id": "{{ s.slug }}",
-                  "labels": ["{{ s.slug }}"]
+                  "labels": ["{{ s.slug }}"],
+                  "properties": { }
                 },
                 {% endfor %}
               ],
@@ -54,6 +53,7 @@ Plusieurs sites proposent des exercices mathématiques interactifs, mais les ban
                   "type": "DEVELOPES",
                   "startNode": "{{ s.slug }}",
                   "endNode": "Moodle",
+                  "properties": { }
                 },
                 {% endfor %}
                 /*{
