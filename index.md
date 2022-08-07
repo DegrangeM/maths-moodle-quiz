@@ -24,7 +24,7 @@ Plusieurs sites proposent des exercices mathématiques interactifs, mais les ban
 <div id="map">
 </div>
 <script>
-  new Neo4jd3('#neo4jd3', {}).updateWithD3Data({
+  new Neo4jd3('#map', {}).updateWithD3Data({
     "nodes": [
         {
             "id": "1",
