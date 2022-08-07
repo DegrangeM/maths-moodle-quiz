@@ -25,6 +25,12 @@ Plusieurs sites proposent des exercices mathématiques interactifs, mais les ban
 </div>
 <script>
   new Neo4jd3('#map', {
+  images: {
+    "moodle": "./sites/icons/moodle.png",
+    {% for s in site.sites %}
+      "{{ s.slug }}": "./sites/icons/{{ s.slug }}.png",
+    {% endfor %}
+  }
   neo4jData: {
     "results": [
       {
