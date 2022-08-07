@@ -30,7 +30,7 @@ Plusieurs sites proposent des exercices mathématiques interactifs, mais les ban
     {% for s in site.sites %}
       "{{ s.slug }}": "./sites/icons/{{ s.slug }}.png",
     {% endfor %}
-  }
+  },
   neo4jData: {
     "results": [
       {
