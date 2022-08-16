@@ -8,4 +8,4 @@ avantages:
   - Toto
 ---
 
-Mathalea est une plateforme qui propose de nombreux exercices mathématiques. Ces exercices peuvent être exporté sous diverses formes (html/latex, diaporama, exercices interactifs). Il est également possiible d'importer ces exercices dans moodle.
+Mathalea est une plateforme qui propose de nombreux exercices mathématiques. Ces exercices peuvent être exporté sous diverses formes (html/latex, diaporama, exercices interactifs). Il est également possible d'importer ces exercices dans moodle.
