@@ -82,6 +82,9 @@ Plusieurs sites proposent des exercices mathématiques interactifs, mais les ban
       }
     ],
     "errors": []
-  }
+  },
+  onNodeDoubleClick: function(node) {
+    location.hash = '#site-' + node.id;
+  },
 });
 </script>
