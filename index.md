@@ -21,7 +21,7 @@ Plusieurs sites proposent des exercices mathématiques interactifs, mais les ban
 <script src="./neo4jd3/d3.min.js"></script>
 <script src="./neo4jd3/neo4jd3.js"></script>
 <link href="./neo4jd3/neo4jd3.min.css" rel="stylesheet" />
-<div id="map">
+<div id="map" style="height:500px">
 </div>
 <script>
   new Neo4jd3('#map', {
