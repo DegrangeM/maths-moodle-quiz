@@ -86,6 +86,8 @@ Plusieurs sites proposent des exercices mathématiques interactifs, mais les ban
   onNodeClick: function(node) {
     location.hash = '#site-' + node.id;
   },
-  zoomFit: true
+  onNodeDoubleClick: function(node) {
+    
+  }
 });
 </script>
