@@ -16,7 +16,7 @@ Plusieurs sites proposent des exercices mathématiques interactifs, mais les ban
 </div>
 {% endfor %}
 
-# Test
+# Carte des intégrations
 
 <script src="./neo4jd3/d3.min.js"></script>
 <script src="./neo4jd3/neo4jd3.js"></script>
