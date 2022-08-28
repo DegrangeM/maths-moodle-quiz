@@ -1,8 +1,8 @@
 ---
 nom: Wims
-lien: #
-aide: #
-image: false
+lien: https://degrangem.github.io/wims-moodle/
+aide: https://github.com/DegrangeM/wims-moodle
+image: true
 wip: true
 ---
 
