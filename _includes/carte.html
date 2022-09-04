@@ -1,0 +1,73 @@
+<script src="./neo4jd3/d3.min.js"></script>
+<script src="./neo4jd3/neo4jd3.js"></script>
+<link href="./neo4jd3/neo4jd3.min.css" rel="stylesheet" />
+<div id="map" style="height:500px">
+</div>
+<script>
+  new Neo4jd3('#map', {
+  images: {
+    "Moodle": "./sites/icons/moodle.png",
+    {% for s in site.sites %}
+      "{{ s.slug }}": "./sites/icons/{{ s.slug }}.png",
+    {% endfor %}
+  },
+  neo4jData: {
+    "results": [
+      {
+        "columns": ["user", "entity"],
+        "data": [
+          {
+            "graph": {
+              "nodes": [
+                {
+                  "id": "Moodle",
+                  "labels": ["Moodle"],
+                  "properties": { }
+                },
+                {% for s in site.sites %}
+                  {% unless s.wip %}
+                  {
+                    "id": "{{ s.slug }}",
+                    "labels": ["{{ s.slug }}"],
+                    "properties": { }
+                  },
+                  {% endunless %}
+                {% endfor %}
+              ],
+              "relationships": [
+                {% for s in site.sites %}
+                  {% unless s.wip %}
+                    {
+                      "id": "link-{{ s.slug }}",
+                      // "type": "DEVELOPES",
+                      "startNode": "{{ s.slug }}",
+                      "endNode": "Moodle",
+                      "properties": { }
+                    },
+                  {% endunless %}
+                {% endfor %}
+                /*{
+                  "id": "7",
+                  "type": "DEVELOPES",
+                  "startNode": "1",
+                  "endNode": "8",
+                  "properties": {
+                    "from": 1470002400000
+                  }
+                }*/
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "errors": []
+  },
+  onNodeClick: function(node) {
+    location.hash = '#site-' + node.id;
+  },
+  onNodeDoubleClick: function(node) {
+    
+  }
+});
+</script>
