@@ -1,0 +1,3 @@
+Le fichier gift obtenu contient un code html qui appelle un script que l'on appellera "Script intégrateur".
+Ce script intégrateur intègre la page web de l'exerciseur directement dans la page moodle (via ce qu'on apelle une iframe), la page web ne reçoit aucune information personnelle (en dehors des données techniques envoyés lorsque l'on visite n'importe quelle page web comme l'adresse ip).
+La page web de l'exerciseur communique ensuite le résultat de l'exercice au script intégrateur qui se charge ensuite de communiquer la note à moodle.
