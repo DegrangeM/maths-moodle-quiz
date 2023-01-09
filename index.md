@@ -23,3 +23,7 @@ Plusieurs sites proposent des exercices mathématiques interactifs, mais les ban
 # Fonctionnement
 
 {% include fonctionnement.md %}
+
+# Démonstration
+
+{% include demonstration.md %}
