@@ -1,6 +1,6 @@
 Il est possible de tester certaines intégrations. Pour cela :
 
-- Rendez-vous sur la plateforme https://e-formation.uha.fr/
+- Rendez-vous sur la plateforme [https://e-formation.uha.fr/](https://e-formation.uha.fr/)
 - Cliquez en haut à droite sur "connexion"
 - Cliquez sur "Connexion comptes locaux"
 - Saisissez les identifiants :
