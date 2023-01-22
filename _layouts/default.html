@@ -41,13 +41,26 @@
         <aside id="sidebar">
 
           <ul>
-          {% for s in site.sites %}
             <li>
-              <a href="#site-{{ s.slug }}">{{ s.nom }}</a>
+              <a href="#la-liste-des-sites">La liste des sites</a>
+              <ul>
+              {% for s in site.sites %}
+                <li>
+                  <a href="#site-{{ s.slug }}">{{ s.nom }}</a>
+                </li>
+              {% endfor %}
+              </ul>
             </li>
-          {% endfor %}
+            <li>
+              <a href="#carte-des-intégrations">Carte des intégrations</a>
+            </li>
+            <li>
+              <a href="#fonctionnement">Fonctionnement</a>
+            </li>
+            <li>
+              <a href="#démonstration">Démonstration</a>
+            </li>
           </ul>
-
           {% if site.show_downloads %}
             <a href="{{ site.github.zip_url }}" class="button">
               <small>Download</small>
