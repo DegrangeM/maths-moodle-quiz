@@ -20,10 +20,10 @@ Plusieurs sites proposent des exercices mathématiques interactifs, mais les ban
 
 {% include carte.html %}
 
-# Fonctionnement
-
-{% include fonctionnement.md %}
-
 # Démonstration
 
 {% include demonstration.md %}
+
+# Fonctionnement
+
+{% include fonctionnement.md %}
