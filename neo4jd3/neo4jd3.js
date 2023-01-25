@@ -159,7 +159,7 @@ function Neo4jD3(_selector, _options) {
                        }
                    })
                    .on('dblclick', function(d) {
-                       stickNode(d);
+                       // NE FONCTIONNE PAS !!  BUG !!! stickNode(d);
 
                        if (typeof options.onNodeDoubleClick === 'function') {
                            options.onNodeDoubleClick(d);
